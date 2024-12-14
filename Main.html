@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #4CAF50;
+            color: #fff;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            padding: 14px 20px;
+            display: block;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            display: none;
+            padding: 20px;
+        }
+        section.active {
+            display: block;
+        }
+        h2 {
+            color: #333;
+        }
+        .contact-info, .skills ul, .projects ul, .work-experience ul, .education ul, .certifications ul, .volunteer ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-info li, .skills li, .projects li, .work-experience li, .education li, .certifications li, .volunteer li {
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+    <script>
+        function showTab(tabId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+        }
+        window.onload = function() {
+            showTab('about');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>RAGHU EBBILI</h1>
+    </header>
+    <nav>
+        <a href="Python:void(0)" onclick="showTab('about')">About Me</a>
+        <a href="Python:void(0)" onclick="showTab('skills')">Skills</a>
+        <a href="Python:void(0)" onclick="showTab('projects')">Projects</a>
+        
+        <a href="Python:void(0)" onclick="showTab('education')">Education</a>
+        <a href="Python:void(0)" onclick="showTab('certifications')">Certifications</a>
+        
+        
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hlo I am Raghuvaran I am from Anantapur which is AndhraPradesh, recently I have completed My graduation in the strean of Computer Science and Engineering from VEMU Institute of Technology, I have completed My intermediate from Anantapur and also I have done my schooling in ZPHS Nuthimadugu which is near by village. Coming to my technical skills I am good at Java,Java and MySQL.
+
+                I am Raghu, a soul full of dreams, passions, and aspirations. My journey through life has been a rollercoaster of experiences, shaping me into the person I am today. This essay will shed light on my personal growth, academic pursuits, and the values that define me as an individual.</p>
+            
+                
+                <h4> Early Life and Background:</h4>
+                <p>Born and raised in a small town, I learned the value of simplicity and close-knit communities. My family has been the cornerstone of my life, instilling in me the importance of hard work, compassion, and perseverance. Growing up, I was always eager to explore the world beyond my hometown, and this curiosity became the driving force behind my pursuit of knowledge and personal growth from an early age, education was a priority in my life.
+                I excelled in my studies and discovered a particular passion for science and technology.As I advanced in my education, I found myself captivated by the world of computer science. The ability to create, innovate, and solve real-world problems through technology inspired me profoundly.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <h4>Technical Skills:</h4>
+                
+               
+                <head>
+                   
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            background-color: #f4f4f9;
+                            margin: 0;
+                            padding: 0;
+                        }
+                
+                        .skills-section {
+                            max-width: 900px;
+                            margin: 50px auto;
+                            padding: 20px;
+                            background: #fff;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                            border-radius: 8px;
+                        }
+                
+                        .skills-section h2 {
+                            text-align: center;
+                            margin-bottom: 20px;
+                            font-size: 2em;
+                            color: #333;
+                        }
+                
+                        .skills-container {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                        }
+                
+                        .skill {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                
+                        .skill h3 {
+                            font-size: 1.2em;
+                            margin-bottom: 10px;
+                            color: #555;
+                        }
+                
+                        .skill-bar {
+                            background: #e7e7e7;
+                            border-radius: 4px;
+                            overflow: hidden;
+                            position: relative;
+                            height: 25px;
+                        }
+                
+                        .skill-level {
+                            height: 100%;
+                            border-radius: 5px 0 0 5px;
+                            text-align: right;
+                            padding-right: 10px;
+                            color: white;
+                            line-height: 25px;
+                            font-size: 0.9em;
+                        }
+                
+                        .skill-Java { width: 90%; background: #4CAF50; }
+                        .skill-Python { width: 85%; background: #FFD700; }
+                        .skill-js { width: 50%; background: #FF5733; }
+                        
+                        .skill-html { width: 95%; background: #E34C26; }
+                        .skill-css { width: 90%; background: #264DE4; }
+                      
+                        .skill-node { width: 80%; background: #8CC84B; }
+
+                        .soft-skills-section {
+                            margin-top: 40px;
+                        }
+
+                        .soft-skill {
+                            background: #f9f9f9;
+                            border: 1px solid #ddd;
+                            border-radius: 5px;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                        }
+
+                        .soft-skill h3 {
+                            font-size: 1.2em;
+                            margin: 0;
+                            color: #555;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="skills-section">
+                        
+                        <div class="skills-container">
+                            <div class="skill">
+                                <h3>Java</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level skill-Java">90%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <h3>Python</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level skill-Python">85%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <h3>JavaScript</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level skill-js">50%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <h3>HTML</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level skill-html">95%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <h3>CSS</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level skill-css">90%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill">
+                                <h3>MySQL</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-level skill-node">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="soft-skills-section">
+                        <h4>Soft Skills:</h4>
+                        <div class="skills-container">
+                            <div class="soft-skill">
+                                <h3>Ability to Quickly Adapt any Environment</h3>
+                            </div>
+                            <div class="soft-skill">
+                                <h3>Good Communicational Skills</h3>
+                            </div>
+                            <div class="soft-skill">
+                                <h3>Time Management</h3>
+                            </div>
+                            <div class="soft-skill">
+                                <h3>Fast Collaboration</h3>
+                            </div>
+                            <div class="soft-skill">
+                                <h3>Problem-solving</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </body>
+
+            </ul>
+        </section>
+        <section id="projects">
+            <h2 style="text-align: center;">Projects</h2>
+            <h4 style="text-align: center; color: #ea0b91;">Major Project</h4>
+            <ul>
+                
+                    
+                
+                    <strong> Project Title: An Efficient Spam Detection Technique Using Machine Learning</strong>
+                    <h5>Technologies Used:</h5>
+                 <ol>
+                    <li> Python </li>
+                    <li> Python Libraries </li>
+                    <li> Machine Learning Technologies </li> 
+                </ol>
+                  <h5>Description: </h5> 
+                   <p>The Main objective of using machine learning for spam detection is to develop an accurate and automated system that can identify and filter out unwanted and potentially harmful messages in real time. The machine learning algorithms in spam detection has become increasingly popular due to their high accuracy rates, scalability, and ability to adapt to new spamming techniques..</p>
+                   <p>Email Spam has become a major problem nowadays, with Rapid growth of internet users, Email spams is also increasing. People are using them for illegal and unethical conducts, phishing and fraud. Sending malicious link through spam emails which can harm our system and can also seek in into your system. Creating a fake profile and email account is much easy for the spammers, they pretend like a genuine person in their spam emails, these spammers target those peoples who are not aware about these frauds. So it is needed to Identify those spam mails which are fraud, this project will identify those spam by using techniques of machine learning.</p>
+                    
+                    
+                    <p>Link: <a href="https://youtu.be/DXvUMMwpFs8?si=gxKo_7jv7jmGMwl5">Project Link</a></p>
+
+            <h4 style="text-align: center; color: hsl(241, 91%, 48%);">Minor Project</h4>
+              
+                    <strong>Project Title: Simple Online Medical Booking system</strong>
+                    <h5>Technologies Used: </h5>
+                    <ol>
+                        <li> Java Script </li>
+                        <li> HTML </li>
+                        <li> CSS </li> 
+                    </ol>
+                    <h5>Description: </h5>
+                    <p>
+                        The main objective of this medical Booking Store system is to take the whole medical store online so that it is reachable to customers 24/7. It also aims at going towards cashless transactions. The medical Booking Store will be a web-based system with a very user-friendly interface which indeed will make the whole management process easy to manage.
+                    </p>
+                    
+                    
+                
+               
+            </ul>
+        </section>
+        <style>
+         
+            .table-container {
+                text-align: center;
+            }
+            table {
+                border-collapse: collapse;
+                width: 60%;
+                margin: 0 auto;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+        </style>
+        <section id="education" class="table-container">
+            <h2>Educational Details</h2>
+            <table border="1" style="border-collapse: collapse; width: 100%;">
+                <tr>
+                    <th>Degree</th>
+                    <th>Board</th>
+                    <th>Institute</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing (YOP)</th>
+                </tr>
+                <tr>
+                    <td>B.Tech (CSE)</td>
+                    <td>JNTUA - Anantapur</td>
+                    <td>VEMU Instute of Technology</td>
+                    <td>76%</td>
+                    <td>2023</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>The Board of Intermediate Education AndhraPradesh</td>
+                    <td>Sri Satya Sai Junior College</td>
+                    <td>8.94 CGPA</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>The Board of Secondary Education AndhraPradesh</td>
+                    <td>ZP High School, Nuthimadugu</td>
+                    <td>8.7 CGPA</td>
+                    <td>2017</td>
+                </tr>
+            </table>
+        </section>
+        <style>
+            .photo-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ensures two images per row */
+                gap: 20px; /* Adds space between images */
+                justify-items: center; /* Centers images horizontally */
+                align-items: center; /* Centers images vertically */
+                margin-top: 20px;
+            }
+            .photo-container img {
+                width: 350px; /* Adjust image width */
+                height: auto; /* Maintain aspect ratio */
+                border: 2px solid #ddd; /* Border for appearance */
+                border-radius: 5px; /* Rounded corners */
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+                transition: transform 0.3s ease; /* Smooth hover effect */
+            }
+            .photo-container img:hover {
+                transform: scale(1.05); /* Zoom effect on hover */
+            }
+        </style>
+        
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="photo-container">
+                <img src="IMG_20220106_221054.jpg" alt="Certification 1">
+                <img src="Java Certificate (1).jpg" alt="Certification 2">
+                <img src="ER MPC APITA_page-0001.jpg" alt="Certification 3">
+                <img src="IMG_20230113_033632.jpg" alt="Certification 4"> 
+                <!-- Add more images if needed -->
+            </div>
+        </section>
+        
+        <style>
+            footer a {
+                color: #0077b5; 
+                text-decoration: none;
+                font-weight: bold;
+            }
+            footer a:hover {
+                color: #005582; 
+                text-decoration: underline;
+            }
+        </style>
+        <footer>
+            <p>For any inquiries or further information, please feel free to reach out via 
+                <a href="mailto:raghuragava118@gmail.com">Mail</a> or through my 
+                <a href="https://www.linkedin.com/in/raghu528/">LinkedIn</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
